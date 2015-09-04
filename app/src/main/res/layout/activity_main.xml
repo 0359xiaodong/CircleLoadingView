@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#256d89">
+
+
+    <com.example.administrator.myapplication.CircleLoading
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:circleRingColor="#ffffff"
+        app:ringWidth="1dp"
+        app:rollingCircleColor="#ffffff"
+        app:rollingCircleRadius="4dp"
+        app:rollingTime="800"
+        android:id="@+id/view"
+        app:rollingMode="changeSpeed"
+
+
+        android:layout_above="@+id/view2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <com.example.administrator.myapplication.CircleLoading
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        app:ringWidth="1dp"
+
+        app:rollingCircleRadius="3dp"
+        app:rollingTime="3000"
+
+
+        android:id="@+id/view2"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/view3"
+        android:layout_alignStart="@+id/view3" />
+    <com.example.administrator.myapplication.CircleLoading
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:ringWidth="4dp"
+
+        app:circleRingColor="#FFFEFF00"
+
+        app:rollingCircleColor="#FF28FF00"
+        app:rollingCircleRadius="8dp"
+        app:rollingTime="2000"
+
+        app:rollingMode="changeSpeed"
+
+        android:layout_marginTop="30dp"
+        android:id="@+id/view3"
+        android:layout_below="@+id/view2"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

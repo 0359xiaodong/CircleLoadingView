@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <declare-styleable name="CircleLoading" >
+
+        <attr name="rollingCircleRadius" format="dimension" />
+        <attr name="rollingCircleColor" format="color" />
+        <attr name="circleRingColor" format="color" />
+        <attr name="ringWidth" format="dimension" />
+        <attr name="rollingTime" format="integer" />
+
+        <attr name="rollingMode" >
+            <enum name="uniformSpeed" value="0" />
+            <enum name="changeSpeed" value="1" />
+        </attr>
+
+    </declare-styleable>
+
+</resources>
